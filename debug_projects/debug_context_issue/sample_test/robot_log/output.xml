@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20240101 16:45:59.569" generator="Robot 3.1.2 (Python 2.7.17 on linux2)">
+<suite source="/home/ute/gopal/sample_test/sample_robot.robot" id="s1" name="Sample Robot">
+<test id="s1-t1" name="Test for TL namespace">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${xyz}</arg>
+</arguments>
+<msg timestamp="20240101 16:45:59.595" level="TRACE">Arguments: [ {b'test1': 123, b'test2': 456} ]</msg>
+<msg timestamp="20240101 16:45:59.595" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20240101 16:45:59.596" starttime="20240101 16:45:59.595"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>globals()</arg>
+</arguments>
+<msg timestamp="20240101 16:45:59.596" level="TRACE">Arguments: [ 'globals()' ]</msg>
+<msg timestamp="20240101 16:45:59.596" level="TRACE">Return: {b'__builtins__': {b'ArithmeticError': &lt;type 'exceptions.ArithmeticError'&gt;,
+                   b'AssertionError': &lt;type 'exceptions.AssertionError'&gt;,
+                   b'AttributeError': &lt;type 'exceptions.AttributeError'&gt;,
+                   b'BaseException': &lt;type 'exceptions.BaseException'&gt;,
+                   b'BufferError': &lt;type 'exceptions.BufferError'&gt;,
+                   b'BytesWarning': &lt;type 'exceptions.BytesWarning'&gt;,
+                   b'DeprecationWarning': &lt;type 'exceptions.DeprecationWarning'&gt;,
+                   b'EOFError': &lt;type 'exceptions.EOFError'&gt;,
+                   b'Ellipsis': Ellipsis,
+                   b'EnvironmentError': &lt;type 'exceptions.EnvironmentError'&gt;,
+                   b'Exception': &lt;type 'exceptions.Exception'&gt;,
+                   b'False': False,
+                   b'FloatingPointError': &lt;type 'exceptions.FloatingPointError'&gt;,
+                   b'FutureWarning': &lt;type 'exceptions.FutureWarning'&gt;,
+                   b'GeneratorExit': &lt;type 'exceptions.GeneratorExit'&gt;,
+                   b'IOError': &lt;type 'exceptions.IOError'&gt;,
+                   b'ImportError': &lt;type 'exceptions.ImportError'&gt;,
+                   b'ImportWarning': &lt;type 'exceptions.ImportWarning'&gt;,
+                   b'IndentationError': &lt;type 'exceptions.IndentationError'&gt;,
+                   b'IndexError': &lt;type 'exceptions.IndexError'&gt;,
+                   b'KeyError': &lt;type 'exceptions.KeyError'&gt;,
+                   b'KeyboardInterrupt': &lt;type 'exceptions.KeyboardInterrupt'&gt;,
+                   b'LookupError': &lt;type 'exceptions.LookupError'&gt;,
+                   b'MemoryError': &lt;type 'exceptions.MemoryError'&gt;,
+                   b'NameError': &lt;type 'exceptions.NameError'&gt;,
+                   b'None': None,
+                   b'NotImplemented': NotImplemented,
+                   b'NotImplementedError': &lt;type 'exceptions.NotImplementedError'&gt;,
+                   b'OSError': &lt;type 'exceptions.OSError'&gt;,
+                   b'OverflowError': &lt;type 'exceptions.OverflowError'&gt;,
+                   b'PendingDeprecationWarning': &lt;type 'exceptions.PendingDeprecationWarning'&gt;,
+                   b'ReferenceError': &lt;type 'exceptions.ReferenceError'&gt;,
+                   b'RuntimeError': &lt;type 'exceptions.RuntimeError'&gt;,
+                   b'RuntimeWarning': &lt;type 'exceptions.RuntimeWarning'&gt;,
+                   b'StandardError': &lt;type 'exceptions.StandardError'&gt;,
+                   b'StopIteration': &lt;type 'exceptions.StopIteration'&gt;,
+                   b'SyntaxError': &lt;type 'exceptions.SyntaxError'&gt;,
+                   b'SyntaxWarning': &lt;type 'exceptions.SyntaxWarning'&gt;,
+                   b'SystemError': &lt;type 'exceptions.SystemError'&gt;,
+                   b'SystemExit': &lt;type 'exceptions.SystemExit'&gt;,
+                   b'TabError': &lt;type 'exceptions.TabError'&gt;,
+                   b'True': True,
+                   b'TypeError': &lt;type 'exceptions.TypeError'&gt;,
+                   b'UnboundLocalError': &lt;type 'exceptions.UnboundLocalError'&gt;,
+                   b'UnicodeDecodeError': &lt;type 'exceptions.UnicodeDecodeError'&gt;,
+                   b'UnicodeEncodeError': &lt;type 'exceptions.UnicodeEncodeError'&gt;,
+                   b'UnicodeError': &lt;type 'exceptions.UnicodeError'&gt;,
+                   b'UnicodeTranslateError': &lt;type 'exceptions.UnicodeTranslateError'&gt;,
+                   b'UnicodeWarning': &lt;type 'exceptions.UnicodeWarning'&gt;,
+                   b'UserWarning': &lt;type 'exceptions.UserWarning'&gt;,
+                   b'ValueError': &lt;type 'exceptions.ValueError'&gt;,
+                   b'Warning': &lt;type 'exceptions.Warning'&gt;,
+                   b'ZeroDivisionError': &lt;type 'exceptions.ZeroDivisionError'&gt;,
+                   b'__debug__': True,
+                   b'__doc__': b"Built-in functions, exceptions, and other objects.\n\nNoteworthy: None is the `nil' object; Ellipsis represents `...' in slices.",
+                   b'__import__': &lt;built-in function __import__&gt;,
+                   b'__name__': b'__builtin__',
+                   b'__package__': None,
+                   b'abs': &lt;built-in function abs&gt;,
+                   b'all': &lt;built-in function all&gt;,
+                   b'any': &lt;built-in function any&gt;,
+                   b'apply': &lt;built-in function apply&gt;,
+                   b'basestring': &lt;type 'basestring'&gt;,
+                   b'bin': &lt;built-in function bin&gt;,
+                   b'bool': &lt;type 'bool'&gt;,
+                   b'buffer': &lt;type 'buffer'&gt;,
+                   b'bytearray': &lt;type 'bytearray'&gt;,
+                   b'bytes': &lt;type 'str'&gt;,
+                   b'callable': &lt;built-in function callable&gt;,
+                   b'chr': &lt;built-in function chr&gt;,
+                   b'classmethod': &lt;type 'classmethod'&gt;,
+                   b'cmp': &lt;built-in function cmp&gt;,
+                   b'coerce': &lt;built-in function coerce&gt;,
+                   b'compile': &lt;built-in function compile&gt;,
+                   b'complex': &lt;type 'complex'&gt;,
+                   b'copyright': Copyright (c) 2001-2019 Python Software Foundation.
+All Rights Reserved.
+
+Copyright (c) 2000 BeOpen.com.
+All Rights Reserved.
+
+Copyright (c) 1995-2001 Corporation for National Research Initiatives.
+All Rights Reserved.
+
+Copyright (c) 1991-1995 Stichting Mathematisch Centrum, Amsterdam.
+All Rights Reserved.,
+                   b'credits':     Thanks to CWI, CNRI, BeOpen.com, Zope Corporation and a cast of thousands
+    for supporting Python development.  See www.python.org for more information.,
+                   b'delattr': &lt;built-in function delattr&gt;,
+                   b'dict': &lt;type 'dict'&gt;,
+                   b'dir': &lt;built-in function dir&gt;,
+                   b'divmod': &lt;built-in function divmod&gt;,
+                   b'enumerate': &lt;type 'enumerate'&gt;,
+                   b'eval': &lt;built-in function eval&gt;,
+                   b'execfile': &lt;built-in function execfile&gt;,
+                   b'exit': Use exit() or Ctrl-D (i.e. EOF) to exit,
+                   b'file': &lt;type 'file'&gt;,
+                   b'filter': &lt;built-in function filter&gt;,
+                   b'float': &lt;type 'float'&gt;,
+                   b'format': &lt;built-in function format&gt;,
+                   b'frozenset': &lt;type 'frozenset'&gt;,
+                   b'getattr': &lt;built-in function getattr&gt;,
+                   b'globals': &lt;built-in function globals&gt;,
+                   b'hasattr': &lt;built-in function hasattr&gt;,
+                   b'hash': &lt;built-in function hash&gt;,
+                   b'help': Type help() for interactive help, or help(object) for help about object.,
+                   b'hex': &lt;built-in function hex&gt;,
+                   b'id': &lt;built-in function id&gt;,
+                   b'input': &lt;built-in function input&gt;,
+                   b'int': &lt;type 'int'&gt;,
+                   b'intern': &lt;built-in function intern&gt;,
+                   b'isinstance': &lt;built-in function isinstance&gt;,
+                   b'issubclass': &lt;built-in function issubclass&gt;,
+                   b'iter': &lt;built-in function iter&gt;,
+                   b'len': &lt;built-in function len&gt;,
+                   b'license': See http://www.python.org/2.7/license.html,
+                   b'list': &lt;type 'list'&gt;,
+                   b'locals': &lt;built-in function locals&gt;,
+                   b'long': &lt;type 'long'&gt;,
+                   b'map': &lt;built-in function map&gt;,
+                   b'max': &lt;built-in function max&gt;,
+                   b'memoryview': &lt;type 'memoryview'&gt;,
+                   b'min': &lt;built-in function min&gt;,
+                   b'next': &lt;built-in function next&gt;,
+                   b'object': &lt;type 'object'&gt;,
+                   b'oct': &lt;built-in function oct&gt;,
+                   b'open': &lt;built-in function open&gt;,
+                   b'ord': &lt;built-in function ord&gt;,
+                   b'pow': &lt;built-in function pow&gt;,
+                   b'print': &lt;built-in function print&gt;,
+                   b'property': &lt;type 'property'&gt;,
+                   b'quit': Use quit() or Ctrl-D (i.e. EOF) to exit,
+                   b'range': &lt;built-in function range&gt;,
+                   b'raw_input': &lt;built-in function raw_input&gt;,
+                   b'reduce': &lt;built-in function reduce&gt;,
+                   b'reload': &lt;built-in function reload&gt;,
+                   b'repr': &lt;built-in function repr&gt;,
+                   b'reversed': &lt;type 'reversed'&gt;,
+                   b'round': &lt;built-in function round&gt;,
+                   b'set': &lt;type 'set'&gt;,
+                   b'setattr': &lt;built-in function setattr&gt;,
+                   b'slice': &lt;type 'slice'&gt;,
+                   b'sorted': &lt;built-in function sorted&gt;,
+                   b'staticmethod': &lt;type 'staticmethod'&gt;,
+                   b'str': &lt;type 'str'&gt;,
+                   b'sum': &lt;built-in function sum&gt;,
+                   b'super': &lt;type 'super'&gt;,
+                   b'tuple': &lt;type 'tuple'&gt;,
+                   b'type': &lt;type 'type'&gt;,
+                   b'unichr': &lt;built-in function unichr&gt;,
+                   b'unicode': &lt;type 'unicode'&gt;,
+                   b'vars': &lt;built-in function vars&gt;,
+                   b'xrange': &lt;type 'xrange'&gt;,
+                   b'zip': &lt;built-in function zip&gt;}}</msg>
+<status status="PASS" endtime="20240101 16:45:59.600" starttime="20240101 16:45:59.596"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Evaluate</arg>
+<arg>globals()['xyz']</arg>
+</arguments>
+<msg timestamp="20240101 16:45:59.600" level="TRACE">Arguments: [ 'Evaluate' | "globals()['xyz']" ]</msg>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>globals()['xyz']</arg>
+</arguments>
+<msg timestamp="20240101 16:45:59.601" level="TRACE">Arguments: [ "globals()['xyz']" ]</msg>
+<msg timestamp="20240101 16:45:59.601" level="FAIL">Evaluating expression 'globals()['xyz']' failed: KeyError: 'xyz'</msg>
+<msg timestamp="20240101 16:45:59.601" level="DEBUG">Traceback (most recent call last):
+  None</msg>
+<status status="FAIL" endtime="20240101 16:45:59.601" starttime="20240101 16:45:59.600"></status>
+</kw>
+<msg timestamp="20240101 16:45:59.601" level="TRACE">Return: (b'FAIL', "Evaluating expression 'globals()['xyz']' failed: KeyError: 'xyz'")</msg>
+<status status="PASS" endtime="20240101 16:45:59.601" starttime="20240101 16:45:59.600"></status>
+</kw>
+<kw name="Get New Details" library="global_test">
+<arguments>
+<arg>${xyz}</arg>
+</arguments>
+<assign>
+<var>${tl}</var>
+</assign>
+<msg timestamp="20240101 16:45:59.601" level="TRACE">Arguments: [ {b'test1': 123, b'test2': 456} ]</msg>
+<msg timestamp="20240101 16:45:59.602" level="INFO">{'test1': 123, 'test2': 456}
+{'test1': 123, 'test3': 789, 'test2': 456}
+{'__builtins__': {'bytearray': &lt;type 'bytearray'&gt;, 'IndexError': &lt;type 'exceptions.IndexError'&gt;, 'all': &lt;built-in function all&gt;, 'help': Type help() for interactive help, or help(object) for help about object., 'vars': &lt;built-in function vars&gt;, 'SyntaxError': &lt;type 'exceptions.SyntaxError'&gt;, 'unicode': &lt;type 'unicode'&gt;, 'UnicodeDecodeError': &lt;type 'exceptions.UnicodeDecodeError'&gt;, 'memoryview': &lt;type 'memoryview'&gt;, 'isinstance': &lt;built-in function isinstance&gt;, 'copyright': Copyright (c) 2001-2019 Python Software Foundation.
+All Rights Reserved.
+
+Copyright (c) 2000 BeOpen.com.
+All Rights Reserved.
+
+Copyright (c) 1995-2001 Corporation for National Research Initiatives.
+All Rights Reserved.
+
+Copyright (c) 1991-1995 Stichting Mathematisch Centrum, Amsterdam.
+All Rights Reserved., 'NameError': &lt;type 'exceptions.NameError'&gt;, 'BytesWarning': &lt;type 'exceptions.BytesWarning'&gt;, 'dict': &lt;type 'dict'&gt;, 'input': &lt;built-in function input&gt;, 'oct': &lt;built-in function oct&gt;, 'bin': &lt;built-in function bin&gt;, 'SystemExit': &lt;type 'exceptions.SystemExit'&gt;, 'StandardError': &lt;type 'exceptions.StandardError'&gt;, 'format': &lt;built-in function format&gt;, 'repr': &lt;built-in function repr&gt;, 'sorted': &lt;built-in function sorted&gt;, 'False': False, 'RuntimeWarning': &lt;type 'exceptions.RuntimeWarning'&gt;, 'list': &lt;type 'list'&gt;, 'iter': &lt;built-in function iter&gt;, 'reload': &lt;built-in function reload&gt;, 'Warning': &lt;type 'exceptions.Warning'&gt;, '__package__': None, 'round': &lt;built-in function round&gt;, 'dir': &lt;built-in function dir&gt;, 'cmp': &lt;built-in function cmp&gt;, 'set': &lt;type 'set'&gt;, 'bytes': &lt;type 'str'&gt;, 'reduce': &lt;built-in function reduce&gt;, 'intern': &lt;built-in function intern&gt;, 'issubclass': &lt;built-in function issubclass&gt;, 'Ellipsis': Ellipsis, 'EOFError': &lt;type 'exceptions.EOFError'&gt;, 'locals': &lt;built-in function locals&gt;, 'BufferError': &lt;type 'exceptions.BufferError'&gt;, 'slice': &lt;type 'slice'&gt;, 'FloatingPointError': &lt;type 'exceptions.FloatingPointError'&gt;, 'sum': &lt;built-in function sum&gt;, 'getattr': &lt;built-in function getattr&gt;, 'abs': &lt;built-in function abs&gt;, 'exit': Use exit() or Ctrl-D (i.e. EOF) to exit, 'print': &lt;built-in function print&gt;, 'True': True, 'FutureWarning': &lt;type 'exceptions.FutureWarning'&gt;, 'ImportWarning': &lt;type 'exceptions.ImportWarning'&gt;, 'None': None, 'hash': &lt;built-in function hash&gt;, 'ReferenceError': &lt;type 'exceptions.ReferenceError'&gt;, 'len': &lt;built-in function len&gt;, 'credits':     Thanks to CWI, CNRI, BeOpen.com, Zope Corporation and a cast of thousands
+    for supporting Python development.  See www.python.org for more information., 'frozenset': &lt;type 'frozenset'&gt;, '__name__': '__builtin__', 'ord': &lt;built-in function ord&gt;, 'super': &lt;type 'super'&gt;, 'TypeError': &lt;type 'exceptions.TypeError'&gt;, 'license': See http://www.python.org/2.7/license.html, 'KeyboardInterrupt': &lt;type 'exceptions.KeyboardInterrupt'&gt;, 'UserWarning': &lt;type 'exceptions.UserWarning'&gt;, 'filter': &lt;built-in function filter&gt;, 'range': &lt;built-in function range&gt;, 'staticmethod': &lt;type 'staticmethod'&gt;, 'SystemError': &lt;type 'exceptions.SystemError'&gt;, 'BaseException': &lt;type 'exceptions.BaseException'&gt;, 'pow': &lt;built-in function pow&gt;, 'RuntimeError': &lt;type 'exceptions.RuntimeError'&gt;, 'float': &lt;type 'float'&gt;, 'MemoryError': &lt;type 'exceptions.MemoryError'&gt;, 'StopIteration': &lt;type 'exceptions.StopIteration'&gt;, 'globals': &lt;built-in function globals&gt;, 'divmod': &lt;built-in function divmod&gt;, 'enumerate': &lt;type 'enumerate'&gt;, 'apply': &lt;built-in function apply&gt;, 'LookupError': &lt;type 'exceptions.LookupError'&gt;, 'open': &lt;built-in function open&gt;, 'quit': Use quit() or Ctrl-D (i.e. EOF) to exit, 'basestring': &lt;type 'basestring'&gt;, 'UnicodeError': &lt;type 'exceptions.UnicodeError'&gt;, 'zip': &lt;built-in function zip&gt;, 'hex': &lt;built-in function hex&gt;, 'long': &lt;type 'long'&gt;, 'next': &lt;built-in function next&gt;, 'ImportError': &lt;type 'exceptions.ImportError'&gt;, 'chr': &lt;built-in function chr&gt;, 'xrange': &lt;type 'xrange'&gt;, 'type': &lt;type 'type'&gt;, '__doc__': "Built-in functions, exceptions, and other objects.\n\nNoteworthy: None is the `nil' object; Ellipsis represents `...' in slices.", 'Exception': &lt;type 'exceptions.Exception'&gt;, 'tuple': &lt;type 'tuple'&gt;, 'UnicodeTranslateError': &lt;type 'exceptions.UnicodeTranslateError'&gt;, 'reversed': &lt;type 'reversed'&gt;, 'UnicodeEncodeError': &lt;type 'exceptions.UnicodeEncodeError'&gt;, 'IOError': &lt;type 'exceptions.IOError'&gt;, 'hasattr': &lt;built-in function hasattr&gt;, 'delattr': &lt;built-in function delattr&gt;, 'setattr': &lt;built-in function setattr&gt;, 'raw_input': &lt;built-in function raw_input&gt;, 'SyntaxWarning': &lt;type 'exceptions.SyntaxWarning'&gt;, 'compile': &lt;built-in function compile&gt;, 'ArithmeticError': &lt;type 'exceptions.ArithmeticError'&gt;, 'str': &lt;type 'str'&gt;, 'property': &lt;type 'property'&gt;, 'GeneratorExit': &lt;type 'exceptions.GeneratorExit'&gt;, 'int': &lt;type 'int'&gt;, '__import__': &lt;built-in function __import__&gt;, 'KeyError': &lt;type 'exceptions.KeyError'&gt;, 'coerce': &lt;built-in function coerce&gt;, 'PendingDeprecationWarning': &lt;type 'exceptions.PendingDeprecationWarning'&gt;, 'file': &lt;type 'file'&gt;, 'EnvironmentError': &lt;type 'exceptions.EnvironmentError'&gt;, 'unichr': &lt;built-in function unichr&gt;, 'id': &lt;built-in function id&gt;, 'OSError': &lt;type 'exceptions.OSError'&gt;, 'DeprecationWarning': &lt;type 'exceptions.DeprecationWarning'&gt;, 'min': &lt;built-in function min&gt;, 'UnicodeWarning': &lt;type 'exceptions.UnicodeWarning'&gt;, 'execfile': &lt;built-in function execfile&gt;, 'any': &lt;built-in function any&gt;, 'complex': &lt;type 'complex'&gt;, 'bool': &lt;type 'bool'&gt;, 'ValueError': &lt;type 'exceptions.ValueError'&gt;, 'NotImplemented': NotImplemented, 'map': &lt;built-in function map&gt;, 'buffer': &lt;type 'buffer'&gt;, 'max': &lt;built-in function max&gt;, 'object': &lt;type 'object'&gt;, 'TabError': &lt;type 'exceptions.TabError'&gt;, 'callable': &lt;built-in function callable&gt;, 'ZeroDivisionError': &lt;type 'exceptions.ZeroDivisionError'&gt;, 'eval': &lt;built-in function eval&gt;, '__debug__': True, 'IndentationError': &lt;type 'exceptions.IndentationError'&gt;, 'AssertionError': &lt;type 'exceptions.AssertionError'&gt;, 'classmethod': &lt;type 'classmethod'&gt;, 'UnboundLocalError': &lt;type 'exceptions.UnboundLocalError'&gt;, 'NotImplementedError': &lt;type 'exceptions.NotImplementedError'&gt;, 'AttributeError': &lt;type 'exceptions.AttributeError'&gt;, 'OverflowError': &lt;type 'exceptions.OverflowError'&gt;}, '__file__': '/home/ute/gopal/sample_test/global_test.py', '__package__': None, 'get_new_details': &lt;function get_new_details at 0x7f597de899d0&gt;, '__name__': 'global_test', '__doc__': None}</msg>
+<msg timestamp="20240101 16:45:59.602" level="TRACE">Return: {b'test1': 123, b'test2': 456, b'test3': 789}</msg>
+<msg timestamp="20240101 16:45:59.602" level="INFO">${tl} = {'test1': 123, 'test3': 789, 'test2': 456}</msg>
+<status status="PASS" endtime="20240101 16:45:59.602" starttime="20240101 16:45:59.601"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${xyz}</arg>
+</arguments>
+<msg timestamp="20240101 16:45:59.603" level="TRACE">Arguments: [ '${xyz}' ]</msg>
+<msg timestamp="20240101 16:45:59.603" level="INFO">${xyz} = {'test1': 123, 'test3': 789, 'test2': 456}</msg>
+<msg timestamp="20240101 16:45:59.603" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20240101 16:45:59.603" starttime="20240101 16:45:59.603"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>globals()</arg>
+</arguments>
+<msg timestamp="20240101 16:45:59.603" level="TRACE">Arguments: [ 'globals()' ]</msg>
+<msg timestamp="20240101 16:45:59.604" level="TRACE">Return: {b'__builtins__': {b'ArithmeticError': &lt;type 'exceptions.ArithmeticError'&gt;,
+                   b'AssertionError': &lt;type 'exceptions.AssertionError'&gt;,
+                   b'AttributeError': &lt;type 'exceptions.AttributeError'&gt;,
+                   b'BaseException': &lt;type 'exceptions.BaseException'&gt;,
+                   b'BufferError': &lt;type 'exceptions.BufferError'&gt;,
+                   b'BytesWarning': &lt;type 'exceptions.BytesWarning'&gt;,
+                   b'DeprecationWarning': &lt;type 'exceptions.DeprecationWarning'&gt;,
+                   b'EOFError': &lt;type 'exceptions.EOFError'&gt;,
+                   b'Ellipsis': Ellipsis,
+                   b'EnvironmentError': &lt;type 'exceptions.EnvironmentError'&gt;,
+                   b'Exception': &lt;type 'exceptions.Exception'&gt;,
+                   b'False': False,
+                   b'FloatingPointError': &lt;type 'exceptions.FloatingPointError'&gt;,
+                   b'FutureWarning': &lt;type 'exceptions.FutureWarning'&gt;,
+                   b'GeneratorExit': &lt;type 'exceptions.GeneratorExit'&gt;,
+                   b'IOError': &lt;type 'exceptions.IOError'&gt;,
+                   b'ImportError': &lt;type 'exceptions.ImportError'&gt;,
+                   b'ImportWarning': &lt;type 'exceptions.ImportWarning'&gt;,
+                   b'IndentationError': &lt;type 'exceptions.IndentationError'&gt;,
+                   b'IndexError': &lt;type 'exceptions.IndexError'&gt;,
+                   b'KeyError': &lt;type 'exceptions.KeyError'&gt;,
+                   b'KeyboardInterrupt': &lt;type 'exceptions.KeyboardInterrupt'&gt;,
+                   b'LookupError': &lt;type 'exceptions.LookupError'&gt;,
+                   b'MemoryError': &lt;type 'exceptions.MemoryError'&gt;,
+                   b'NameError': &lt;type 'exceptions.NameError'&gt;,
+                   b'None': None,
+                   b'NotImplemented': NotImplemented,
+                   b'NotImplementedError': &lt;type 'exceptions.NotImplementedError'&gt;,
+                   b'OSError': &lt;type 'exceptions.OSError'&gt;,
+                   b'OverflowError': &lt;type 'exceptions.OverflowError'&gt;,
+                   b'PendingDeprecationWarning': &lt;type 'exceptions.PendingDeprecationWarning'&gt;,
+                   b'ReferenceError': &lt;type 'exceptions.ReferenceError'&gt;,
+                   b'RuntimeError': &lt;type 'exceptions.RuntimeError'&gt;,
+                   b'RuntimeWarning': &lt;type 'exceptions.RuntimeWarning'&gt;,
+                   b'StandardError': &lt;type 'exceptions.StandardError'&gt;,
+                   b'StopIteration': &lt;type 'exceptions.StopIteration'&gt;,
+                   b'SyntaxError': &lt;type 'exceptions.SyntaxError'&gt;,
+                   b'SyntaxWarning': &lt;type 'exceptions.SyntaxWarning'&gt;,
+                   b'SystemError': &lt;type 'exceptions.SystemError'&gt;,
+                   b'SystemExit': &lt;type 'exceptions.SystemExit'&gt;,
+                   b'TabError': &lt;type 'exceptions.TabError'&gt;,
+                   b'True': True,
+                   b'TypeError': &lt;type 'exceptions.TypeError'&gt;,
+                   b'UnboundLocalError': &lt;type 'exceptions.UnboundLocalError'&gt;,
+                   b'UnicodeDecodeError': &lt;type 'exceptions.UnicodeDecodeError'&gt;,
+                   b'UnicodeEncodeError': &lt;type 'exceptions.UnicodeEncodeError'&gt;,
+                   b'UnicodeError': &lt;type 'exceptions.UnicodeError'&gt;,
+                   b'UnicodeTranslateError': &lt;type 'exceptions.UnicodeTranslateError'&gt;,
+                   b'UnicodeWarning': &lt;type 'exceptions.UnicodeWarning'&gt;,
+                   b'UserWarning': &lt;type 'exceptions.UserWarning'&gt;,
+                   b'ValueError': &lt;type 'exceptions.ValueError'&gt;,
+                   b'Warning': &lt;type 'exceptions.Warning'&gt;,
+                   b'ZeroDivisionError': &lt;type 'exceptions.ZeroDivisionError'&gt;,
+                   b'__debug__': True,
+                   b'__doc__': b"Built-in functions, exceptions, and other objects.\n\nNoteworthy: None is the `nil' object; Ellipsis represents `...' in slices.",
+                   b'__import__': &lt;built-in function __import__&gt;,
+                   b'__name__': b'__builtin__',
+                   b'__package__': None,
+                   b'abs': &lt;built-in function abs&gt;,
+                   b'all': &lt;built-in function all&gt;,
+                   b'any': &lt;built-in function any&gt;,
+                   b'apply': &lt;built-in function apply&gt;,
+                   b'basestring': &lt;type 'basestring'&gt;,
+                   b'bin': &lt;built-in function bin&gt;,
+                   b'bool': &lt;type 'bool'&gt;,
+                   b'buffer': &lt;type 'buffer'&gt;,
+                   b'bytearray': &lt;type 'bytearray'&gt;,
+                   b'bytes': &lt;type 'str'&gt;,
+                   b'callable': &lt;built-in function callable&gt;,
+                   b'chr': &lt;built-in function chr&gt;,
+                   b'classmethod': &lt;type 'classmethod'&gt;,
+                   b'cmp': &lt;built-in function cmp&gt;,
+                   b'coerce': &lt;built-in function coerce&gt;,
+                   b'compile': &lt;built-in function compile&gt;,
+                   b'complex': &lt;type 'complex'&gt;,
+                   b'copyright': Copyright (c) 2001-2019 Python Software Foundation.
+All Rights Reserved.
+
+Copyright (c) 2000 BeOpen.com.
+All Rights Reserved.
+
+Copyright (c) 1995-2001 Corporation for National Research Initiatives.
+All Rights Reserved.
+
+Copyright (c) 1991-1995 Stichting Mathematisch Centrum, Amsterdam.
+All Rights Reserved.,
+                   b'credits':     Thanks to CWI, CNRI, BeOpen.com, Zope Corporation and a cast of thousands
+    for supporting Python development.  See www.python.org for more information.,
+                   b'delattr': &lt;built-in function delattr&gt;,
+                   b'dict': &lt;type 'dict'&gt;,
+                   b'dir': &lt;built-in function dir&gt;,
+                   b'divmod': &lt;built-in function divmod&gt;,
+                   b'enumerate': &lt;type 'enumerate'&gt;,
+                   b'eval': &lt;built-in function eval&gt;,
+                   b'execfile': &lt;built-in function execfile&gt;,
+                   b'exit': Use exit() or Ctrl-D (i.e. EOF) to exit,
+                   b'file': &lt;type 'file'&gt;,
+                   b'filter': &lt;built-in function filter&gt;,
+                   b'float': &lt;type 'float'&gt;,
+                   b'format': &lt;built-in function format&gt;,
+                   b'frozenset': &lt;type 'frozenset'&gt;,
+                   b'getattr': &lt;built-in function getattr&gt;,
+                   b'globals': &lt;built-in function globals&gt;,
+                   b'hasattr': &lt;built-in function hasattr&gt;,
+                   b'hash': &lt;built-in function hash&gt;,
+                   b'help': Type help() for interactive help, or help(object) for help about object.,
+                   b'hex': &lt;built-in function hex&gt;,
+                   b'id': &lt;built-in function id&gt;,
+                   b'input': &lt;built-in function input&gt;,
+                   b'int': &lt;type 'int'&gt;,
+                   b'intern': &lt;built-in function intern&gt;,
+                   b'isinstance': &lt;built-in function isinstance&gt;,
+                   b'issubclass': &lt;built-in function issubclass&gt;,
+                   b'iter': &lt;built-in function iter&gt;,
+                   b'len': &lt;built-in function len&gt;,
+                   b'license': See http://www.python.org/2.7/license.html,
+                   b'list': &lt;type 'list'&gt;,
+                   b'locals': &lt;built-in function locals&gt;,
+                   b'long': &lt;type 'long'&gt;,
+                   b'map': &lt;built-in function map&gt;,
+                   b'max': &lt;built-in function max&gt;,
+                   b'memoryview': &lt;type 'memoryview'&gt;,
+                   b'min': &lt;built-in function min&gt;,
+                   b'next': &lt;built-in function next&gt;,
+                   b'object': &lt;type 'object'&gt;,
+                   b'oct': &lt;built-in function oct&gt;,
+                   b'open': &lt;built-in function open&gt;,
+                   b'ord': &lt;built-in function ord&gt;,
+                   b'pow': &lt;built-in function pow&gt;,
+                   b'print': &lt;built-in function print&gt;,
+                   b'property': &lt;type 'property'&gt;,
+                   b'quit': Use quit() or Ctrl-D (i.e. EOF) to exit,
+                   b'range': &lt;built-in function range&gt;,
+                   b'raw_input': &lt;built-in function raw_input&gt;,
+                   b'reduce': &lt;built-in function reduce&gt;,
+                   b'reload': &lt;built-in function reload&gt;,
+                   b'repr': &lt;built-in function repr&gt;,
+                   b'reversed': &lt;type 'reversed'&gt;,
+                   b'round': &lt;built-in function round&gt;,
+                   b'set': &lt;type 'set'&gt;,
+                   b'setattr': &lt;built-in function setattr&gt;,
+                   b'slice': &lt;type 'slice'&gt;,
+                   b'sorted': &lt;built-in function sorted&gt;,
+                   b'staticmethod': &lt;type 'staticmethod'&gt;,
+                   b'str': &lt;type 'str'&gt;,
+                   b'sum': &lt;built-in function sum&gt;,
+                   b'super': &lt;type 'super'&gt;,
+                   b'tuple': &lt;type 'tuple'&gt;,
+                   b'type': &lt;type 'type'&gt;,
+                   b'unichr': &lt;built-in function unichr&gt;,
+                   b'unicode': &lt;type 'unicode'&gt;,
+                   b'vars': &lt;built-in function vars&gt;,
+                   b'xrange': &lt;type 'xrange'&gt;,
+                   b'zip': &lt;built-in function zip&gt;}}</msg>
+<status status="PASS" endtime="20240101 16:45:59.607" starttime="20240101 16:45:59.603"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${xyz}</arg>
+</arguments>
+<msg timestamp="20240101 16:45:59.607" level="TRACE">Arguments: [ {b'test1': 123, b'test2': 456, b'test3': 789} ]</msg>
+<msg timestamp="20240101 16:45:59.608" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20240101 16:45:59.608" starttime="20240101 16:45:59.607"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Evaluate</arg>
+<arg>globals()['xyz']</arg>
+</arguments>
+<msg timestamp="20240101 16:45:59.608" level="TRACE">Arguments: [ 'Evaluate' | "globals()['xyz']" ]</msg>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>globals()['xyz']</arg>
+</arguments>
+<msg timestamp="20240101 16:45:59.608" level="TRACE">Arguments: [ "globals()['xyz']" ]</msg>
+<msg timestamp="20240101 16:45:59.609" level="FAIL">Evaluating expression 'globals()['xyz']' failed: KeyError: 'xyz'</msg>
+<msg timestamp="20240101 16:45:59.609" level="DEBUG">Traceback (most recent call last):
+  None</msg>
+<status status="FAIL" endtime="20240101 16:45:59.609" starttime="20240101 16:45:59.608"></status>
+</kw>
+<msg timestamp="20240101 16:45:59.609" level="TRACE">Return: (b'FAIL', "Evaluating expression 'globals()['xyz']' failed: KeyError: 'xyz'")</msg>
+<status status="PASS" endtime="20240101 16:45:59.609" starttime="20240101 16:45:59.608"></status>
+</kw>
+<status status="PASS" endtime="20240101 16:45:59.609" critical="yes" starttime="20240101 16:45:59.594"></status>
+</test>
+<test id="s1-t2" name="Test TL second">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${xyz}</arg>
+</arguments>
+<msg timestamp="20240101 16:45:59.610" level="TRACE">Arguments: [ {b'test1': 123, b'test2': 456, b'test3': 789} ]</msg>
+<msg timestamp="20240101 16:45:59.610" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20240101 16:45:59.610" starttime="20240101 16:45:59.610"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>globals()</arg>
+</arguments>
+<msg timestamp="20240101 16:45:59.611" level="TRACE">Arguments: [ 'globals()' ]</msg>
+<msg timestamp="20240101 16:45:59.611" level="TRACE">Return: {b'__builtins__': {b'ArithmeticError': &lt;type 'exceptions.ArithmeticError'&gt;,
+                   b'AssertionError': &lt;type 'exceptions.AssertionError'&gt;,
+                   b'AttributeError': &lt;type 'exceptions.AttributeError'&gt;,
+                   b'BaseException': &lt;type 'exceptions.BaseException'&gt;,
+                   b'BufferError': &lt;type 'exceptions.BufferError'&gt;,
+                   b'BytesWarning': &lt;type 'exceptions.BytesWarning'&gt;,
+                   b'DeprecationWarning': &lt;type 'exceptions.DeprecationWarning'&gt;,
+                   b'EOFError': &lt;type 'exceptions.EOFError'&gt;,
+                   b'Ellipsis': Ellipsis,
+                   b'EnvironmentError': &lt;type 'exceptions.EnvironmentError'&gt;,
+                   b'Exception': &lt;type 'exceptions.Exception'&gt;,
+                   b'False': False,
+                   b'FloatingPointError': &lt;type 'exceptions.FloatingPointError'&gt;,
+                   b'FutureWarning': &lt;type 'exceptions.FutureWarning'&gt;,
+                   b'GeneratorExit': &lt;type 'exceptions.GeneratorExit'&gt;,
+                   b'IOError': &lt;type 'exceptions.IOError'&gt;,
+                   b'ImportError': &lt;type 'exceptions.ImportError'&gt;,
+                   b'ImportWarning': &lt;type 'exceptions.ImportWarning'&gt;,
+                   b'IndentationError': &lt;type 'exceptions.IndentationError'&gt;,
+                   b'IndexError': &lt;type 'exceptions.IndexError'&gt;,
+                   b'KeyError': &lt;type 'exceptions.KeyError'&gt;,
+                   b'KeyboardInterrupt': &lt;type 'exceptions.KeyboardInterrupt'&gt;,
+                   b'LookupError': &lt;type 'exceptions.LookupError'&gt;,
+                   b'MemoryError': &lt;type 'exceptions.MemoryError'&gt;,
+                   b'NameError': &lt;type 'exceptions.NameError'&gt;,
+                   b'None': None,
+                   b'NotImplemented': NotImplemented,
+                   b'NotImplementedError': &lt;type 'exceptions.NotImplementedError'&gt;,
+                   b'OSError': &lt;type 'exceptions.OSError'&gt;,
+                   b'OverflowError': &lt;type 'exceptions.OverflowError'&gt;,
+                   b'PendingDeprecationWarning': &lt;type 'exceptions.PendingDeprecationWarning'&gt;,
+                   b'ReferenceError': &lt;type 'exceptions.ReferenceError'&gt;,
+                   b'RuntimeError': &lt;type 'exceptions.RuntimeError'&gt;,
+                   b'RuntimeWarning': &lt;type 'exceptions.RuntimeWarning'&gt;,
+                   b'StandardError': &lt;type 'exceptions.StandardError'&gt;,
+                   b'StopIteration': &lt;type 'exceptions.StopIteration'&gt;,
+                   b'SyntaxError': &lt;type 'exceptions.SyntaxError'&gt;,
+                   b'SyntaxWarning': &lt;type 'exceptions.SyntaxWarning'&gt;,
+                   b'SystemError': &lt;type 'exceptions.SystemError'&gt;,
+                   b'SystemExit': &lt;type 'exceptions.SystemExit'&gt;,
+                   b'TabError': &lt;type 'exceptions.TabError'&gt;,
+                   b'True': True,
+                   b'TypeError': &lt;type 'exceptions.TypeError'&gt;,
+                   b'UnboundLocalError': &lt;type 'exceptions.UnboundLocalError'&gt;,
+                   b'UnicodeDecodeError': &lt;type 'exceptions.UnicodeDecodeError'&gt;,
+                   b'UnicodeEncodeError': &lt;type 'exceptions.UnicodeEncodeError'&gt;,
+                   b'UnicodeError': &lt;type 'exceptions.UnicodeError'&gt;,
+                   b'UnicodeTranslateError': &lt;type 'exceptions.UnicodeTranslateError'&gt;,
+                   b'UnicodeWarning': &lt;type 'exceptions.UnicodeWarning'&gt;,
+                   b'UserWarning': &lt;type 'exceptions.UserWarning'&gt;,
+                   b'ValueError': &lt;type 'exceptions.ValueError'&gt;,
+                   b'Warning': &lt;type 'exceptions.Warning'&gt;,
+                   b'ZeroDivisionError': &lt;type 'exceptions.ZeroDivisionError'&gt;,
+                   b'__debug__': True,
+                   b'__doc__': b"Built-in functions, exceptions, and other objects.\n\nNoteworthy: None is the `nil' object; Ellipsis represents `...' in slices.",
+                   b'__import__': &lt;built-in function __import__&gt;,
+                   b'__name__': b'__builtin__',
+                   b'__package__': None,
+                   b'abs': &lt;built-in function abs&gt;,
+                   b'all': &lt;built-in function all&gt;,
+                   b'any': &lt;built-in function any&gt;,
+                   b'apply': &lt;built-in function apply&gt;,
+                   b'basestring': &lt;type 'basestring'&gt;,
+                   b'bin': &lt;built-in function bin&gt;,
+                   b'bool': &lt;type 'bool'&gt;,
+                   b'buffer': &lt;type 'buffer'&gt;,
+                   b'bytearray': &lt;type 'bytearray'&gt;,
+                   b'bytes': &lt;type 'str'&gt;,
+                   b'callable': &lt;built-in function callable&gt;,
+                   b'chr': &lt;built-in function chr&gt;,
+                   b'classmethod': &lt;type 'classmethod'&gt;,
+                   b'cmp': &lt;built-in function cmp&gt;,
+                   b'coerce': &lt;built-in function coerce&gt;,
+                   b'compile': &lt;built-in function compile&gt;,
+                   b'complex': &lt;type 'complex'&gt;,
+                   b'copyright': Copyright (c) 2001-2019 Python Software Foundation.
+All Rights Reserved.
+
+Copyright (c) 2000 BeOpen.com.
+All Rights Reserved.
+
+Copyright (c) 1995-2001 Corporation for National Research Initiatives.
+All Rights Reserved.
+
+Copyright (c) 1991-1995 Stichting Mathematisch Centrum, Amsterdam.
+All Rights Reserved.,
+                   b'credits':     Thanks to CWI, CNRI, BeOpen.com, Zope Corporation and a cast of thousands
+    for supporting Python development.  See www.python.org for more information.,
+                   b'delattr': &lt;built-in function delattr&gt;,
+                   b'dict': &lt;type 'dict'&gt;,
+                   b'dir': &lt;built-in function dir&gt;,
+                   b'divmod': &lt;built-in function divmod&gt;,
+                   b'enumerate': &lt;type 'enumerate'&gt;,
+                   b'eval': &lt;built-in function eval&gt;,
+                   b'execfile': &lt;built-in function execfile&gt;,
+                   b'exit': Use exit() or Ctrl-D (i.e. EOF) to exit,
+                   b'file': &lt;type 'file'&gt;,
+                   b'filter': &lt;built-in function filter&gt;,
+                   b'float': &lt;type 'float'&gt;,
+                   b'format': &lt;built-in function format&gt;,
+                   b'frozenset': &lt;type 'frozenset'&gt;,
+                   b'getattr': &lt;built-in function getattr&gt;,
+                   b'globals': &lt;built-in function globals&gt;,
+                   b'hasattr': &lt;built-in function hasattr&gt;,
+                   b'hash': &lt;built-in function hash&gt;,
+                   b'help': Type help() for interactive help, or help(object) for help about object.,
+                   b'hex': &lt;built-in function hex&gt;,
+                   b'id': &lt;built-in function id&gt;,
+                   b'input': &lt;built-in function input&gt;,
+                   b'int': &lt;type 'int'&gt;,
+                   b'intern': &lt;built-in function intern&gt;,
+                   b'isinstance': &lt;built-in function isinstance&gt;,
+                   b'issubclass': &lt;built-in function issubclass&gt;,
+                   b'iter': &lt;built-in function iter&gt;,
+                   b'len': &lt;built-in function len&gt;,
+                   b'license': See http://www.python.org/2.7/license.html,
+                   b'list': &lt;type 'list'&gt;,
+                   b'locals': &lt;built-in function locals&gt;,
+                   b'long': &lt;type 'long'&gt;,
+                   b'map': &lt;built-in function map&gt;,
+                   b'max': &lt;built-in function max&gt;,
+                   b'memoryview': &lt;type 'memoryview'&gt;,
+                   b'min': &lt;built-in function min&gt;,
+                   b'next': &lt;built-in function next&gt;,
+                   b'object': &lt;type 'object'&gt;,
+                   b'oct': &lt;built-in function oct&gt;,
+                   b'open': &lt;built-in function open&gt;,
+                   b'ord': &lt;built-in function ord&gt;,
+                   b'pow': &lt;built-in function pow&gt;,
+                   b'print': &lt;built-in function print&gt;,
+                   b'property': &lt;type 'property'&gt;,
+                   b'quit': Use quit() or Ctrl-D (i.e. EOF) to exit,
+                   b'range': &lt;built-in function range&gt;,
+                   b'raw_input': &lt;built-in function raw_input&gt;,
+                   b'reduce': &lt;built-in function reduce&gt;,
+                   b'reload': &lt;built-in function reload&gt;,
+                   b'repr': &lt;built-in function repr&gt;,
+                   b'reversed': &lt;type 'reversed'&gt;,
+                   b'round': &lt;built-in function round&gt;,
+                   b'set': &lt;type 'set'&gt;,
+                   b'setattr': &lt;built-in function setattr&gt;,
+                   b'slice': &lt;type 'slice'&gt;,
+                   b'sorted': &lt;built-in function sorted&gt;,
+                   b'staticmethod': &lt;type 'staticmethod'&gt;,
+                   b'str': &lt;type 'str'&gt;,
+                   b'sum': &lt;built-in function sum&gt;,
+                   b'super': &lt;type 'super'&gt;,
+                   b'tuple': &lt;type 'tuple'&gt;,
+                   b'type': &lt;type 'type'&gt;,
+                   b'unichr': &lt;built-in function unichr&gt;,
+                   b'unicode': &lt;type 'unicode'&gt;,
+                   b'vars': &lt;built-in function vars&gt;,
+                   b'xrange': &lt;type 'xrange'&gt;,
+                   b'zip': &lt;built-in function zip&gt;}}</msg>
+<status status="PASS" endtime="20240101 16:45:59.614" starttime="20240101 16:45:59.611"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Evaluate</arg>
+<arg>globals()['xyz']</arg>
+</arguments>
+<msg timestamp="20240101 16:45:59.615" level="TRACE">Arguments: [ 'Evaluate' | "globals()['xyz']" ]</msg>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>globals()['xyz']</arg>
+</arguments>
+<msg timestamp="20240101 16:45:59.615" level="TRACE">Arguments: [ "globals()['xyz']" ]</msg>
+<msg timestamp="20240101 16:45:59.615" level="FAIL">Evaluating expression 'globals()['xyz']' failed: KeyError: 'xyz'</msg>
+<msg timestamp="20240101 16:45:59.615" level="DEBUG">Traceback (most recent call last):
+  None</msg>
+<status status="FAIL" endtime="20240101 16:45:59.615" starttime="20240101 16:45:59.615"></status>
+</kw>
+<msg timestamp="20240101 16:45:59.616" level="TRACE">Return: (b'FAIL', "Evaluating expression 'globals()['xyz']' failed: KeyError: 'xyz'")</msg>
+<status status="PASS" endtime="20240101 16:45:59.616" starttime="20240101 16:45:59.615"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${xyz}</arg>
+</arguments>
+<msg timestamp="20240101 16:45:59.616" level="TRACE">Arguments: [ {b'test1': 123, b'test2': 456, b'test3': 789} ]</msg>
+<msg timestamp="20240101 16:45:59.616" level="TRACE">Return: None</msg>
+<status status="PASS" endtime="20240101 16:45:59.616" starttime="20240101 16:45:59.616"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Evaluate</arg>
+<arg>globals()['xyz']</arg>
+</arguments>
+<msg timestamp="20240101 16:45:59.617" level="TRACE">Arguments: [ 'Evaluate' | "globals()['xyz']" ]</msg>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>globals()['xyz']</arg>
+</arguments>
+<msg timestamp="20240101 16:45:59.617" level="TRACE">Arguments: [ "globals()['xyz']" ]</msg>
+<msg timestamp="20240101 16:45:59.617" level="FAIL">Evaluating expression 'globals()['xyz']' failed: KeyError: 'xyz'</msg>
+<msg timestamp="20240101 16:45:59.617" level="DEBUG">Traceback (most recent call last):
+  None</msg>
+<status status="FAIL" endtime="20240101 16:45:59.617" starttime="20240101 16:45:59.617"></status>
+</kw>
+<msg timestamp="20240101 16:45:59.617" level="TRACE">Return: (b'FAIL', "Evaluating expression 'globals()['xyz']' failed: KeyError: 'xyz'")</msg>
+<status status="PASS" endtime="20240101 16:45:59.617" starttime="20240101 16:45:59.616"></status>
+</kw>
+<tags>
+<tag>second</tag>
+</tags>
+<status status="PASS" endtime="20240101 16:45:59.618" critical="yes" starttime="20240101 16:45:59.609"></status>
+</test>
+<status status="PASS" endtime="20240101 16:45:59.618" starttime="20240101 16:45:59.571"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">second</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Sample Robot" pass="2">Sample Robot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
