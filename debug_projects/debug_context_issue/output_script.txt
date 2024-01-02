@@ -1,0 +1,36 @@
+python runner.py
+{'run': <function run at 0x7f597df68150>, '__builtins__': <module '__builtin__' (built-in)>, '__file__': 'runner.py', 'rebot': <function rebot at 0x7f597df68550>, '__package__': None, 'GLOBAL_NAME': {...}, 'run_test': <function run_test at 0x7f597f128e50>, 'ResultVisitor': <class 'robot.result.visitor.ResultVisitor'>, '__name__': '__main__', 'ExecutionResult': <function ExecutionResult at 0x7f597e48c6d0>, '__doc__': None}
+==============================================================================
+Sample Robot
+==============================================================================
+Test for TL namespace                                                 {'test1': 123, 'test2': 456}
+......{'test1': 123, 'test3': 789, 'test2': 456}
+Test for TL namespace                                                 | PASS |
+------------------------------------------------------------------------------
+Test TL second                                                        {'test1': 123, 'test3': 789, 'test2': 456}
+...{'test1': 123, 'test3': 789, 'test2': 456}
+Test TL second                                                        | PASS |
+------------------------------------------------------------------------------
+Sample Robot                                                          | PASS |
+2 critical tests, 2 passed, 0 failed
+2 tests total, 2 passed, 0 failed
+==============================================================================
+Output:  /home/ute/gopal/sample_test/robot_log/output.xml
+Log:     /home/ute/gopal/sample_test/robot_log/log.html
+Report:  /home/ute/gopal/sample_test/robot_log/report.html
+{'run': <function run at 0x7f597df68150>, '__builtins__': <module '__builtin__' (built-in)>, '__file__': 'runner.py', 'rebot': <function rebot at 0x7f597df68550>, '__package__': None, 'GLOBAL_NAME': {...}, 'run_test': <function run_test at 0x7f597f128e50>, 'ResultVisitor': <class 'robot.result.visitor.ResultVisitor'>, '__name__': '__main__', 'ExecutionResult': <function ExecutionResult at 0x7f597e48c6d0>, '__doc__': None}
+==============================================================================
+Sample Robot
+==============================================================================
+Test TL second                                                        {'test1': 123, 'test3': 789, 'test2': 456}
+...{'test1': 123, 'test3': 789, 'test2': 456}
+Test TL second                                                        | PASS |
+------------------------------------------------------------------------------
+Sample Robot                                                          | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  /home/ute/gopal/sample_test/robot_log1/output.xml
+Log:     /home/ute/gopal/sample_test/robot_log1/log.html
+Report:  /home/ute/gopal/sample_test/robot_log1/report.html
+{'run': <function run at 0x7f597df68150>, '__builtins__': <module '__builtin__' (built-in)>, '__file__': 'runner.py', 'rebot': <function rebot at 0x7f597df68550>, '__package__': None, 'GLOBAL_NAME': {...}, 'run_test': <function run_test at 0x7f597f128e50>, 'ResultVisitor': <class 'robot.result.visitor.ResultVisitor'>, '__name__': '__main__', 'ExecutionResult': <function ExecutionResult at 0x7f597e48c6d0>, '__doc__': None}
